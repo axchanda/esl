@@ -1,10 +1,10 @@
-var esl = require('modesl'),
-    express = require('express'),
-    app = express(),
-    port = process.env.PORT || 3500,
-    server = app.listen(port,()=> {
-        console.log('Magic happens at port: '+ port);        
-    });
+var esl = require('modesl');
+// var express = require('express'),
+//     app = express(),
+//     port = process.env.PORT || 3500,
+//     server = app.listen(port,()=> {
+//         console.log('Magic happens at port: '+ port);        
+//     });
 
 var esl_server = new esl.Server({port: 8085, myevents:true}, function(){
     console.log("esl server is up");
